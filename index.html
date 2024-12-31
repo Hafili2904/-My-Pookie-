@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤍My Pookie🤍</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="password.css">
+</head>
+<body>
+    <!-- Halaman Login -->
+    <div id="loginPage">
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Login Dulu Ya Cantikkk</h1>
+                <div class="textbox">
+                    <input type="text" id="username" placeholder="Username">
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <button onclick="login()">Login</button>
+                <p class="error-message" id="errorMessage">Yah Ini Mah Yang Login Bukan Pacar Haphap (wleeeeee)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Halaman Utama -->
+    <div id="mainPage" style="display: none;">
+        <!-- Header -->
+        <div id="header">
+            <div id="header-left">Pumpkin ❤ Pookie</div>
+            <div id="header-right">
+                <span id="profile-text">Levina Ramadani Calon Pacar Hafili</span>
+                <img id="profile-picture" src="profile.jpg" alt="Profile Picture" onclick="showLargePicture()">
+            </div>  
+        </div>
+
+        <!-- Kondisi 1 -->
+        <div id="conditionBox1" class="condition-box">
+            <h3>🤍🤍 🤍Harapan Buat Levinaawwww🤍 🤍 🤍 </h3>
+            <p>Banyak sihhhh harapaaan buat di tahun baru ini, salah satunya mah status kita nggak cuma HTSan lagi hehehehe :) (aminn hahahahhahhaha). Semoga di tahun depan, Kita bisa jadi dua orang yang lebih bahagia dan lebih dekat heheheheh, Lopyuuuuu Levinaaawww 🤍 🤍 🤍 🤍 🤍 🤍 🤍 🤍 🤍</p>
+        </div>
+
+        <!-- Kondisi 2 -->
+        <div id="conditionBox2" class="condition-box">
+            <h3>Kedepepannnyaa 😋😋 </h3>
+            <p>Tahun ini penuh cerita, tahun depan kita bisa lebih banyak cerita bersama. Happy New Year, semoga kita makin dekat!🤍 🤍 🤍 🤍 🤍 🤍 🤍 🤍</p>
+        </div>
+        
+         <!-- Kondisi 2 -->
+         <div id="conditionBox2" class="condition-box">
+            <h3>🤍 🤍Happy New Year Sayanggggg  🤍 🤍</h3>
+        </div>
+
+        <!-- Kotak Foto -->
+        <div class="photo-box">
+            <h3>🤍 🤍Foto🤍 🤍</h3>
+            <div class="photo-gallery">
+                <img src="photo1.jpg" alt="Foto 1" onclick="showGalleryPhoto(this.src)">
+                <img src="photo2.jpg" alt="Foto 2" onclick="showGalleryPhoto(this.src)">
+                <img src="photo3.jpg" alt="Foto 3" onclick="showGalleryPhoto(this.src)">
+                <img src="photo4.jpg" alt="Foto 4" onclick="showGalleryPhoto(this.src)">
+                <img src="photo5.jpg" alt="Foto 5" onclick="showGalleryPhoto(this.src)">
+            </div>
+        </div>
+    </div>
+    <!-- Modal untuk menampilkan gambar besar -->
+    <div id="modal" class="modal" onclick="closeLargePicture()">
+        <img id="modal-picture" src="" alt="Large Profile Picture">
+    </div>
+
+    <!-- Modal Foto Galeri -->
+    <div id="modal-photo" class="modal-photo" onclick="closeModalPhoto()">
+        <img id="modal-photo-img" src="" alt="Gambar Besar">
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
